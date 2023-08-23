@@ -62,7 +62,9 @@ function App() {
                   style={iconSize}
                 ></lord-icon>
               </a>
-              <p className="rocket-text">Click the Rocket!</p>
+              <p className="rocket-text">
+                Click the Rocket to <span>Get Started!</span>
+              </p>
             </div>
           </div>
         </div>
