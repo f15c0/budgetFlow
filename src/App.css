@@ -1,38 +1,161 @@
 .App {
-  text-align: center;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("./assets/bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+.budget-home{
+    padding: 20px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.rocket{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    margin-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.rocket-text{
+    font-size: 24px;
+    font-weight: 600;
+   
+}
+.budget-home-img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5%;   
+}
+ 
+.plan-image{
+    position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.plan-text1{
+    font-size: 32px;
+    font-weight: 600;
+    color: darkgoldenrod;
+    top: 13%;
+    left: 16%;
+    position: absolute;
+    z-index: 10;
+    transform: rotate(-28deg);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.plan-text2 {
+    font-size: 32px;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.plan-text3 {
+    font-size: 28px;
+    color: darkgreen;
+    position: absolute;
+    top: -5%;
+    right: -7%;
+    font-weight: 600;
+    transform: rotate(28deg);
+    z-index: 10;
+    
+}
+
+.plan-text4{
+    font-size: 28px;
+    position: absolute;
+    color: dodgerblue;
+    top: 47%;
+    right: -6%;
+    font-weight: 600;
+    z-index: 10;
+}
+
+.budget-texts{
+   text-align: center;
+   padding: 20px 0px;
+   margin: 20px 0px;
+
+}
+
+.budget-home-title{
+    font-size: 48px;
+    padding: 10px 0px;
+    color: #013;
+}
+
+.home-subtext{
+    font-size: 32px;
+}
+
+blockquote {
+    border-left: 4px solid #2c3e50;
+    font-size: 32px;
+    margin: 40px auto;
+    padding-left: 15px;
+    font-style: italic;
+    background-color: #f4f4f4;
+    max-width: 50%;
+    border-radius: 10px;
+    text-align: left;
+    
+}
+
+cite {
+    display: block;
+    text-align: right;
+    color: #34495e;
+    margin-top: 5px;
+}
+
+.credits {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 20px;
+    margin-top: 40px;
+    z-index: 10;
+    padding-bottom: 10px;
+    padding-left: 10px;
+   
+}
+
+.author{
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.author span{
+    font-weight: 700;
+    margin-left: 8px;
+}
+/* Adjust for tablets */
+@media (max-width: 768px) {
+    .random-text1 {
+        top: 14%;
+        left: 35%;
+       
+    }
+}
+
+/* Adjust for mobile phones */
+@media (max-width: 480px) {
+    .random-text1 {
+        top: 12%;
+        left: 30%;
+        
+    }
 }
