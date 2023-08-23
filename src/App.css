@@ -1,161 +1,414 @@
 .App {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("./assets/bg.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url("./assets/bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
-
-
-
-.budget-home{
-    padding: 20px;
-
+.budget-home {
+  padding: 20px;
 }
 
-.rocket{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 20px;
-    margin-top: 20px;
+.rocket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  margin-top: 20px;
 }
 
-.rocket-text{
-    font-size: 24px;
-    font-weight: 600;
-   
+.rocket-text {
+  font-size: 24px;
+  font-weight: 600;
 }
-.budget-home-img{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 5%;   
-}
- 
-.plan-image{
-    position: relative;
+.budget-home-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 5%;
 }
 
-.plan-text1{
-    font-size: 32px;
-    font-weight: 600;
-    color: darkgoldenrod;
-    top: 13%;
-    left: 16%;
-    position: absolute;
-    z-index: 10;
-    transform: rotate(-28deg);
+.plan-image {
+  position: relative;
+}
+
+.plan-text1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: darkgoldenrod;
+  top: 13%;
+  left: 16%;
+  position: absolute;
+  z-index: 10;
+  transform: rotate(-26deg);
 }
 
 .plan-text2 {
-    font-size: 32px;
-    font-weight: 600;
-    font-size: 28px;
+  font-size: 32px;
+  font-weight: 600;
 }
 
 .plan-text3 {
-    font-size: 28px;
-    color: darkgreen;
-    position: absolute;
-    top: -5%;
-    right: -7%;
-    font-weight: 600;
-    transform: rotate(28deg);
-    z-index: 10;
-    
+  font-size: 28px;
+  color: darkgreen;
+  position: absolute;
+  top: -5%;
+  right: -7%;
+  font-weight: 600;
+  transform: rotate(28deg);
+  z-index: 10;
 }
 
-.plan-text4{
-    font-size: 28px;
-    position: absolute;
-    color: dodgerblue;
-    top: 47%;
-    right: -6%;
-    font-weight: 600;
-    z-index: 10;
+.plan-text4 {
+  font-size: 28px;
+  position: absolute;
+  color: dodgerblue;
+  top: 47%;
+  right: -6%;
+  font-weight: 600;
+  z-index: 10;
 }
 
-.budget-texts{
-   text-align: center;
-   padding: 20px 0px;
-   margin: 20px 0px;
-
+.budget-texts {
+  text-align: center;
+  padding: 20px 0px;
+  margin: 20px 0px;
 }
 
-.budget-home-title{
-    font-size: 48px;
-    padding: 10px 0px;
-    color: #013;
+.budget-home-title {
+  font-size: 48px;
+  padding: 10px 0px;
+  color: #013;
 }
 
-.home-subtext{
-    font-size: 32px;
+.home-subtext {
+  font-size: 32px;
 }
 
 blockquote {
-    border-left: 4px solid #2c3e50;
-    font-size: 32px;
-    margin: 40px auto;
-    padding-left: 15px;
-    font-style: italic;
-    background-color: #f4f4f4;
-    max-width: 50%;
-    border-radius: 10px;
-    text-align: left;
-    
+  border-left: 4px solid #2c3e50;
+  font-size: 32px;
+  margin: 40px auto;
+  padding-left: 15px;
+  font-style: italic;
+  background-color: #f4f4f4;
+  max-width: 50%;
+  border-radius: 10px;
+  text-align: left;
 }
 
 cite {
-    display: block;
-    text-align: right;
-    color: #34495e;
-    margin-top: 5px;
+  display: block;
+  text-align: right;
+  color: #34495e;
+  margin-top: 5px;
 }
 
 .credits {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-top: 20px;
-    margin-top: 40px;
-    z-index: 10;
-    padding-bottom: 10px;
-    padding-left: 10px;
-   
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
 
-.author{
-    text-align: center;
-    font-size: 24px;
-    cursor: pointer;
+.author {
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
-.author span{
-    font-weight: 700;
-    margin-left: 8px;
+.author span {
+  font-weight: 700;
+  margin-left: 8px;
 }
+
+.p-image {
+  height: 800px;
+}
+.roc {
+  width: 250px;
+  height: 250px;
+}
+
+@media (max-width: 1024px) {
+  .p-image {
+    height: 400px;
+  }
+
+  .budget-home-title {
+    font-size: 32px;
+    /* padding: 10px 0px;
+        color: #013; */
+  }
+
+  .home-subtext {
+    font-size: 20px;
+  }
+
+  .rocket-text {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .plan-text1 {
+    font-size: 26px;
+    font-weight: 600;
+    color: darkgoldenrod;
+    top: 9%;
+    left: 7%;
+  }
+
+  .plan-text2 {
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  .plan-text3 {
+    font-size: 26px;
+    color: darkgreen;
+    top: -9%;
+    right: -14%;
+    font-weight: 600;
+  }
+
+  .plan-text4 {
+    font-size: 26px;
+    color: dodgerblue;
+    top: 43%;
+    right: -23%;
+    font-weight: 600;
+  }
+}
+
 /* Adjust for tablets */
 @media (max-width: 768px) {
-    .random-text1 {
-        top: 14%;
-        left: 35%;
-       
+  .p-image {
+    height: 350px;
+  }
+
+  .budget-home-title {
+    font-size: 28px;
+    /* padding: 10px 0px;
+          color: #013; */
+  }
+
+  .home-subtext {
+    font-size: 18px;
+  }
+  .rocket-text {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .plan-text1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: darkgoldenrod;
+    top: 10%;
+    left: 5%;
+  }
+
+  .plan-text2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .plan-text3 {
+    font-size: 24px;
+    color: darkgreen;
+    top: -7%;
+    right: -12%;
+    font-weight: 600;
+  }
+
+  .plan-text4 {
+    font-size: 24px;
+    color: dodgerblue;
+    top: 42%;
+    right: -23%;
+    font-weight: 600;
+  }
+
+  .title{
+    font-size: 26px;
+  }
+}
+
+/* Adjust for mobile phones */
+@media (max-width: 540px) {
+  .p-image {
+      height: 300px;
+    }
+  
+    .budget-home-title {
+      font-size: 24px;
+      /* padding: 10px 0px;
+            color: #013; */
+    }
+  
+    .home-subtext {
+      font-size: 16px;
+    }
+  
+    .rocket-text {
+      font-size: 12px;
+      font-weight: 600;
+    }
+  
+    .plan-text1 {
+      font-size: 20px;
+      font-weight: 600;
+      color: darkgoldenrod;
+      top: 8%;
+      left: 6%;
+    }
+  
+    .plan-text2 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+  
+    .plan-text3 {
+      font-size: 20px;
+      color: darkgreen;
+      top: -9%;
+      right: -11%;
+      font-weight: 600;
+    }
+  
+    .plan-text4 {
+      font-size: 20px;
+      color: dodgerblue;
+      top: 43%;
+      right: -22%;
+      font-weight: 600;
+    }
+  
+    .title {
+      font-size: 24px;
     }
 }
 
 /* Adjust for mobile phones */
 @media (max-width: 480px) {
-    .random-text1 {
-        top: 12%;
-        left: 30%;
-        
-    }
+  .p-image {
+    height: 260px;
+  }
+
+  .budget-home-title {
+    font-size: 18px;
+    /* padding: 10px 0px;
+            color: #013; */
+  }
+
+  .home-subtext {
+    font-size: 14px;
+  }
+
+  .rocket-text {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .plan-text1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: darkgoldenrod;
+    top: 10%;
+    left: 6%;
+  }
+
+  .plan-text2 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .plan-text3 {
+    font-size: 18px;
+    color: darkgreen;
+    top: -11%;
+    right: -14%;
+    font-weight: 600;
+  }
+
+  .plan-text4 {
+    font-size: 18px;
+    color: dodgerblue;
+    top: 43%;
+    right: -24%;
+    font-weight: 600;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+}
+
+/* Adjust for mobile phones */
+@media (max-width: 385px) {
+  .p-image {
+    height: 200px;
+  }
+
+  .budget-home-title {
+    font-size: 15px;
+    /* padding: 10px 0px;
+            color: #013; */
+  }
+
+  .home-subtext {
+    font-size: 12px;
+  }
+
+  .rocket-text {
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  .plan-text1 {
+    font-size: 15px;
+    font-weight: 600;
+    color: darkgoldenrod;
+    top: 8%;
+    left: 4%;
+  }
+
+  .plan-text2 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .plan-text3 {
+    font-size: 15px;
+    color: darkgreen;
+    top: -11%;
+    right: -14%;
+    font-weight: 600;
+  }
+
+  .plan-text4 {
+    font-size: 15px;
+    color: dodgerblue;
+    top: 42%;
+    right: -27%;
+    font-weight: 600;
+  }
+
+  .title {
+    font-size: 22px;
+  }
 }
