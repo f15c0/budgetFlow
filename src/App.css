@@ -33,6 +33,7 @@
   align-items: center;
   text-align: center;
   padding-top: 5%;
+  padding-right: 34px;
 }
 
 .plan-image {
@@ -211,7 +212,7 @@ a {
   }
 
   .budget-home-title {
-    font-size: 28px;
+    font-size: 25px;
     /* padding: 10px 0px;
           color: #013; */
   }
@@ -261,7 +262,7 @@ a {
 }
 
 /* Adjust for mobile phones */
-@media (max-width: 540px) {
+@media (max-width: 560px) {
   .p-image {
       height: 300px;
     }
@@ -318,7 +319,7 @@ a {
 }
 
 /* Adjust for mobile phones */
-@media (max-width: 480px) {
+@media (max-width: 490px) {
   .p-image {
     height: 260px;
   }
