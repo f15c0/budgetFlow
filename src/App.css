@@ -1,4 +1,5 @@
 .App {
+  position: relative;
   background-image: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0.9),
@@ -92,7 +93,7 @@
 .home-subtext {
   font-size: 32px;
 }
-.rocket-text span{
+.rocket-text span {
   font-weight: 800;
   display: block;
   color: darkgreen;
@@ -101,31 +102,24 @@
 blockquote {
   border-left: 4px solid #2c3e50;
   font-size: 32px;
-  margin: 40px auto;
+  margin: 20px auto;
   padding-left: 15px;
   font-style: italic;
   background-color: #f4f4f4;
-  max-width: 50%;
+  max-width: 90%;
   border-radius: 10px;
   text-align: left;
 }
 
 cite {
+  font-size: 24px;
   display: block;
   text-align: right;
   color: #34495e;
   margin-top: 5px;
 }
 
-.credits {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  padding-bottom: 10px;
-  padding-left: 10px;
-}
+
 
 .author {
   text-align: center;
@@ -151,6 +145,25 @@ a {
 }
 
 @media (max-width: 1024px) {
+  blockquote {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  cite {
+    font-size: 18px;
+    text-align: right;
+
+    color: #34495e;
+    margin-top: 5px;
+  }
+
+  .author {
+    font-size: 18px;
+  }
+
   .p-image {
     height: 400px;
   }
@@ -198,15 +211,34 @@ a {
     right: -21%;
     font-weight: 600;
   }
-     .title {
-       font-size: 28px;
-       padding-bottom: 32px;
-       margin-bottom: 32px;
-     }
+  .title {
+    font-size: 28px;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
 }
 
 /* Adjust for tablets */
 @media (max-width: 768px) {
+  blockquote {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2px;
+  }
+
+  cite {
+    font-size: 14px;
+    text-align: right;
+
+    color: #34495e;
+    margin-top: 5px;
+  }
+
+  .author {
+    font-size: 14px;
+  }
   .p-image {
     height: 350px;
   }
@@ -254,72 +286,126 @@ a {
     font-weight: 600;
   }
 
-  .title{
+  .title {
     font-size: 26px;
     padding-bottom: 38px;
-      margin-bottom: 38px;
+    margin-bottom: 38px;
   }
 }
 
 /* Adjust for mobile phones */
 @media (max-width: 560px) {
+  .credits {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+blockquote {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2px;
+  }
+
+  cite {
+    font-size: 12px;
+    text-align: right;
+    color: #34495e;
+    margin-top: 4px;
+  }
+
+  .author {
+    font-size: 12px;
+  }
+
+
   .p-image {
-      height: 300px;
-    }
-  
-    .budget-home-title {
-      font-size: 24px;
-      /* padding: 10px 0px;
+    height: 300px;
+  }
+
+  .budget-home-title {
+    font-size: 24px;
+    /* padding: 10px 0px;
             color: #013; */
-    }
-  
-    .home-subtext {
-      font-size: 16px;
-    }
-  
-    .rocket-text {
-      font-size: 12px;
-      font-weight: 600;
-    }
-  
-    .plan-text1 {
-      font-size: 20px;
-      font-weight: 600;
-      color: darkgoldenrod;
-      top: 8%;
-      left: 6%;
-    }
-  
-    .plan-text2 {
-      font-size: 20px;
-      font-weight: 600;
-    }
-  
-    .plan-text3 {
-      font-size: 20px;
-      color: darkgreen;
-      top: -9%;
-      right: -11%;
-      font-weight: 600;
-    }
-  
-    .plan-text4 {
-      font-size: 20px;
-      color: dodgerblue;
-      top: 43%;
-      right: -22%;
-      font-weight: 600;
-    }
-  
-    .title {
-      font-size: 24px;
-      padding-bottom: 38px;
-        margin-bottom: 38px;
-    }
+  }
+
+  .home-subtext {
+    font-size: 16px;
+  }
+
+  .rocket-text {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .plan-text1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: darkgoldenrod;
+    top: 8%;
+    left: 6%;
+  }
+
+  .plan-text2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .plan-text3 {
+    font-size: 20px;
+    color: darkgreen;
+    top: -9%;
+    right: -11%;
+    font-weight: 600;
+  }
+
+  .plan-text4 {
+    font-size: 20px;
+    color: dodgerblue;
+    top: 43%;
+    right: -22%;
+    font-weight: 600;
+  }
+
+  .title {
+    font-size: 24px;
+    padding-bottom: 38px;
+    margin-bottom: 38px;
+  }
 }
 
 /* Adjust for mobile phones */
 @media (max-width: 490px) {
+
+  .credits {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  
+    blockquote {
+      font-size: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 2px;
+    }
+  
+    cite {
+      font-size: 10px;
+      text-align: right;
+      color: #34495e;
+      margin-top: 4px;
+    }
+  
+    .author {
+      font-size: 10px;
+    }
+
   .p-image {
     height: 260px;
   }
@@ -371,13 +457,12 @@ a {
   .title {
     font-size: 22px;
     padding-bottom: 38px;
-      margin-bottom: 38px;
+    margin-bottom: 38px;
   }
 }
 
 /* Adjust for mobile phones */
 @media (max-width: 385px) {
-
   .p-image {
     height: 200px;
   }

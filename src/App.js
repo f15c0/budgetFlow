@@ -68,25 +68,25 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Credit Block ---------- */}
-      {/* <div className="credits">
-        <blockquote>
-          "A goal without a plan is just a wish."
-          <cite>- Antoine de Saint-Exupéry</cite>
-        </blockquote>
-        <blockquote>
-          "Good fortune is what happens when opportunity meets with planning."
-          <cite>- Thomas Edison</cite>
-        </blockquote>
-        <p className="author">
-          <a href="https://www.linkedin.com/in/dennis-agbokpe-b1b4241aa/">
-            Creator & Author: <span>Dennis K.</span>
-          </a>
-        </p>
-      </div> */}
-      {/* Credit Block End ---------- */}
+        {/* Credit Block ---------- */}
+        <div className="credits">
+          <blockquote>
+            "A goal without a plan is just a wish."
+            <cite>- Antoine de Saint-Exupéry</cite>
+          </blockquote>
+          <blockquote>
+            "Good fortune is what happens when opportunity meets with planning."
+            <cite>- Thomas Edison</cite>
+          </blockquote>
+          <p className="author">
+            <a href="https://www.linkedin.com/in/dennis-agbokpe-b1b4241aa/">
+              Creator & Author: <span>Dennis K.</span>
+            </a>
+          </p>
+        </div>
+        {/* Credit Block End ---------- */}
+      </div>
     </>
   );
 }
